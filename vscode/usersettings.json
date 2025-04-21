@@ -1,139 +1,343 @@
 {
-    "workbench.colorTheme": "One Hunter Theme Material",
-    "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontVariations": false,
-    "editor.fontWeight": "200",
-    "editor.fontSize":18,
-    "editor.fontLigatures": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.preferredDarkColorTheme": "Dobri Next -A01- Dark",
-    "workbench.preferredHighContrastColorTheme": "Dobri Next -A01- Dark",
-    "workbench.preferredHighContrastLightColorTheme": "Dobri Next -A01- Dark",
-    "workbench.preferredLightColorTheme": "Dobri Next -A01- Dark",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.preferredDarkColorTheme": "One Hunter Flexoki Dark",
+  "workbench.preferredHighContrastColorTheme": "One Hunter Flexoki Dark",
+  "workbench.preferredHighContrastLightColorTheme": "One Hunter Flexoki Dark",
+  "workbench.preferredLightColorTheme": "One Hunter Flexoki Dark",
 
-    "workbench.colorCustomizations": {
-        // Border separating the title bar from the rest of the editor
-        "titleBar.border": "#18222D",
-        // Border color to separate Tabs from each other
-        "tab.border": "#18222D",
-        // Border color on the top separating to the editor (terminal)
-        "panel.border": "#18222D",
-        // Border color on the side separating the editor
-        "sideBar.border": "#18222D",
-        // "statusBar.background": "#000000",
-        "statusBar.debuggingBackground": "#000000",
-        "statusBar.noFolderBackground": "#000000",
-        // Border color with the Side Bar
-        "activityBar.border": "#18222D",
-        // Border color separating the Status Bar and editor
-        "statusBar.border": "#18222D",
-        // Border color to separate multiple editor groups from each other
-        "editorGroup.border": "#18222D",
-        // Border color of the editor group title header when tabs are enabled
-        "editorGroupHeader.tabsBorder": "#18222D",
+  "workbench.colorCustomizations": {
+    // Border separating the title bar from the rest of the editor
+    "titleBar.border": "#18222D",
+    // Border color to separate Tabs from each other
+    "tab.border": "#18222D",
+    // Border color on the top separating to the editor (terminal)
+    "panel.border": "#18222D",
+    // Border color on the side separating the editor
+    "sideBar.border": "#18222D",
+    // "statusBar.background": "#000000",
+    "statusBar.debuggingBackground": "#000000",
+    "statusBar.noFolderBackground": "#000000",
+    // Border color with the Side Bar
+    "activityBar.border": "#18222D",
+    // Border color separating the Status Bar and editor
+    "statusBar.border": "#18222D",
+    // Border color to separate multiple editor groups from each other
+    "editorGroup.border": "#18222D",
+    // Border color of the editor group title header when tabs are enabled
+    "editorGroupHeader.tabsBorder": "#18222D",
+  },
 
-    },
-    "terminal.integrated.enablemultilinepastewarning": false,
-    "files.autosave": "afterdelay",
-    
-    "editor.linenumbers": "relative",
-    "editor.wordwrap": "on",
-    // "vim.vimrc.enable": true,
-    // "vim.vimrc.path": "$home/.vimrc",
-    "workbench.settings.applytoallprofiles": [
+  "workbench.startupEditor": "none",
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.sideBar.location": "right",
+  "workbench.editor.pinnedTabSizing": "compact",
 
-        
+  "editor.fontFamily": "Fantasque Sans Mono" ,
+  "editor.fontVariations": false,
+  "editor.fontWeight": "400",
+  "editor.fontSize": 20,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
 
-    ],
-    "vim.leader": "<Space>",
-    "vim.useSystemClipboard": true,
-    "vim.hlsearch": true,
-    "vim.normalModeKeyBindingsNonRecursive": [
-      // NAVIGATION
-      // switch b/w buffers
-      { "before": ["<S-Tab>"], "commands": [":bprevious"] },
-      { "before": ["<Tab>"], "commands": [":bnext"] },
+  "window.density.editorTabHeight": "compact",
   
-      // splits
-      { "before": ["leader", "v"], "commands": [":vsplit"] },
-      { "before": ["leader", "h"], "commands": [":split"] },
-      // panes
-      {"before":["<leader>","h"],"after":["<C-w>","h"]},
-      {"before":["<leader>","l"],"after":["<C-w>","l"]},
-/*       {
-        "before": ["Ctrl", "h"],
-        "commands": ["workbench.action.focusLeftGroup"],
-      },
-      {
-        "before": ["Ctrl", "j"],
-        "commands": ["workbench.action.focusBelowGroup"]
-      },
-      {
-        "before": ["Ctrl", "k"],
-        "commands": ["workbench.action.focusAboveGroup"]
-      },
-      {
-        "before": ["Ctrl", "l"],
-        "commands": ["workbench.action.focusRightGroup"]
-      }, */
-      // NICE TO HAVE
-      { "before": ["leader", "w"], "commands": [":w!"] },
-      { "before": ["leader", "q"], "commands": [":q!"] },
-      { "before": ["leader", "x"], "commands": [":x!"] },
-      // Remapping y p d to have separate register for system clipboard
-      //does not work
-/*       {"before":["d"],"after":["\"_d"]},
-      {"before":["y"],"after":["\"+y"]},
-      {"before":["p"],"after":["\"+p"]}, */
+  "terminal.integrated.fontFamily": "DankMono Nerd Font",
+  "terminal.integrated.fontSize": 18,
+  "terminal.integrated.copyOnSelection": true,
 
-      {
-        "before": ["[", "d"],
-        "commands": ["editor.action.marker.prev"]
-      },
-      {
-        "before": ["]", "d"],
-        "commands": ["editor.action.marker.next"]
-      },
-      {
-        "before": ["<leader>", "c", "a"],
-        "commands": ["editor.action.quickFix"]
-      },
-      { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-      { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
-      {
-        "before": ["g", "h"],
-        "commands": ["editor.action.showDefinitionPreviewHover"]
-      }
+  "go.toolsManagement.autoUpdate": true,
+
+  "redhat.telemetry.enabled": false,
+
+  "glassit.alpha": 255,
+
+  "dotnet.automaticallyCreateSolutionInWorkspace": false,
+  "NugetGallery.credentialProviderFolder": "{user-profile}/.nuget/plugins/netcore/CredentialProvider.Microsoft",
+  "NugetGallery.skipRestore": false,
+  "NugetGallery.sources": [
+    "{\"name\":\"nuget.org\",\"url\":\"https://api.nuget.org/v3/index.json\"}"
+  ],
+
+ /* vim related   */ 
+  // "terminal.integrated.enablemultilinepastewarning": false,
+  // "files.autosave": "afterdelay",
+  // "editor.linenumbers": "relative",
+  // // "vim.vimrc.enable": true,
+  // // "vim.vimrc.path": "$home/.vimrc",
+  // "workbench.settings.applytoallprofiles": [],
+
+  // Vim config ====================================================================================
+
+  "vim.leader": "<Space>",
+  "vim.useSystemClipboard": true,
+  // To improve performance"
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.hlsearch": true,
+
+//Bind p in visual mode to paste without overriding the current register:
+"vim.visualModeKeyBindingsNonRecursive": [
+  {
+    "before": [
+      "p",
     ],
-    "vim.visualModeKeyBindings": [
-      // Stay in visual mode while indenting
-      { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-      { "before": [">"], "commands": ["editor.action.indentLines"] },
-      // Move selected lines while staying in visual mode
-      { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-      { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-      // toggle comment selection
-      { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+    "after": [
+      "p",
+      "g",
+      "v",
+      "y"
+    ]
+  },
+],
+"vim.normalModeKeyBindingsNonRecursive": [
+  {
+    "before": [
     ],
-    
-    "vim.insertModeKeyBindings": [
-      {"before":["<C-j>"],"after": ["<Escape>"]}
-    ],
-    "go.toolsManagement.autoUpdate": true,
-    "editor.lineNumbers": "relative",
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
-    "workbench.startupEditor": "none",
-    "workbench.tree.renderIndentGuides": "none",
-    "application.shellEnvironmentResolutionTimeout": 100,
-    "extensions.experimental.affinity": {
-      "asvetliakov.vscode-neovim": 1
-    },
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "window.density.editorTabHeight": "compact",
-    "workbench.editor.pinnedTabSizing": "compact",
-    "redhat.telemetry.enabled": false,
-    "glassit.alpha": 245,
-    "cmake.showOptionsMovedNotification": false,
-    
+    "after": [
+    ]
+  },
+],
+/* This and below configuration only works if you have neovim installed - read https://github.com/VSCodeVim/Vim/#key-remapping  */
+"vim.enableNeovim": true,
+  // "vim.handleKeys": {
+  //   "<C-c>": false,
+  //   "<C-v>": false,
+  //   "<C-a>": false
+  // },
+//   "vim.normalModeKeyBindingsNonRecursive": [
+//     // NAVIGATION
+//     // switch b/w buffers
+//     {
+//         "before": [
+//           "<S-Tab>"
+//         ],
+//         "commands": [
+//           ":bprevious"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "<Tab>"
+//         ],
+//         "commands": [
+//           ":bnext"
+//         ]
+//     },
+//     splits
+//     {
+//       "before": [
+//         "leader",
+//         "v"
+//       ],
+//       "commands": [
+//         ":vsplit"
+//       ]
+//     },
+//     {
+
+//         "leader",
+//         "h"
+//       ],
+//       "commands": [
+//         ":split"
+//       ]
+//     },
+//     // panes
+//     {
+//       "before": [
+//         "<leader>",
+//         "j"
+//       ],
+//       "after": [
+//         "<C-w>",
+//         "h"
+//       ]
+//     },
+//     {
+//       "before": [
+//         "<leader>",
+//         "l"
+//       ],
+//       "after": [
+//         "<C-w>",
+//         "l"
+//       ]
+//     },
+//     /*       {
+//         "before": ["Ctrl", "h"],
+//         "commands": ["workbench.action.focusLeftGroup"],
+//       },
+//       {
+//         "before": ["Ctrl", "j"],
+//         "commands": ["workbench.action.focusBelowGroup"]
+//       },
+//       {
+//         "before": ["Ctrl", "k"],
+//         "commands": ["workbench.action.focusAboveGroup"]
+//       },
+//       {
+//         "before": ["Ctrl", "l"],
+//         "commands": ["workbench.action.focusRightGroup"]
+//       }, */
+//     NICE TO HAVE
+//       {
+//         "before": [
+//           "leader",
+//           "w"
+//         ],
+//         "commands": [
+//           ":w!"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "leader",
+//           "q"
+//         ],
+//         "commands": [
+//           ":q!"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "leader",
+//           "x"
+//         ],
+//     "commands": [
+//           ":x!"
+//         ]
+//       },
+//       // Remapping y p d to have separate register for system clipboard
+//       //does not work
+//       /*       {"before":["d"],"after":["\"_d"]},
+//           {"before":["y"],"after":["\"+y"]},
+//           {"before":["p"],"after":["\"+p"]}, */
+//       {
+//         "before": [
+//           "[",
+//           "d"
+//         ],
+//         "commands": [
+//           "editor.action.marker.prev"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "]",
+//           "d"
+//         ],
+//         "commands": [
+//           "editor.action.marker.next"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "<leader>",
+//           "c",
+//           "a"
+//         ],
+//         "commands": [
+//           "editor.action.quickFix"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "leader",
+//           "f"
+//         ],
+//         "commands": [
+//           "workbench.action.quickOpen"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "leader",
+//           "shift+f"
+//         ],
+//         "commands": [
+//           "workbench.action.findInFiles"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "leader",
+//           "p"
+//         ],
+//         "commands": [
+//           "editor.action.formatDocument"
+//         ]
+//       },
+//       {
+//         "before": [
+//           "g",
+//           "h"
+//         ],
+//         "commands": [
+//           "editor.action.showDefinitionPreviewHover"
+//         ]
+//       },
+//     ],
+//       "vim.visualModeKeyBindings": [
+//         // Stay in visual mode while indenting
+//         {
+//           "before": [
+//             "<"
+//           ],
+//           "commands": [
+//             "editor.action.outdentLines"
+//           ]
+//         },
+//         {
+//           "before": [
+//             ">"
+//           ],
+//           "commands": [
+//             "editor.action.indentLines"
+//           ]
+//         },
+//         // Move selected lines while staying in visual mode
+//         {
+//           "before": [
+//             "J"
+//           ],
+//           "commands": [
+//             "editor.action.moveLinesDownAction"
+//           ]
+//         },
+//         {
+//           "before": [
+//             "K"
+//           ],
+//           "commands": [
+//             "editor.action.moveLinesUpAction"
+//           ]
+//         },
+//         // toggle comment selection
+//         {
+//           "before": [
+//             "leader",
+//             "c"
+//           ],
+//           "commands": [
+//             "editor.action.commentLine"
+//           ]
+//         }
+//       ],
+//       "vim.insertModeKeyBindings": [
+//         {
+//           "before": [
+//             "<C-j>"
+//           ],
+//           "after": [
+//             "<Escape>"
+//           ]
+//         }
+//       ],
+//  }
+
 }
