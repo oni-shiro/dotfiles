@@ -1,0 +1,18 @@
+{
+	"Class Template": {
+		"prefix": "class", // The trigger word.  Type "class" and press Tab.
+		"body": [
+			"using System;",
+			"using System.Collections.Generic;",
+			"using System.Linq;",
+			"using System.Threading.Tasks;",
+			"",
+			"namespace ${namspace};", // Use ${namespace} for dynamic namespace
+			"public class ${1:ClassName}", // ${1:ClassName} is a tab stop.
+			"{",
+			"//$0", // $0 is the final cursor position
+			"}",
+		],
+		"description": "Creates a new class with namespace"
+	}
+}
