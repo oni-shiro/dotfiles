@@ -28,6 +28,16 @@
         "command": "workbench.action.navigateDown",
     },
     {
+        "key" : "ctrl+down",
+        "command": "scrollPageDown",
+        "when": "(inputFocus || editorFocus) && vim.mode == 'Normal'"
+    },
+    {
+        "key" : "ctrl+up",
+        "command": "scrollPageUp",
+        "when": "inputFocus || editorFocus"
+    },
+    {
         "key": "space f",
         "command": "workbench.action.findInFiles",
         "when": "(vim.mode=='Normal') && (editorTextFocus || !inputFocus)"
@@ -59,7 +69,7 @@
     {
         "key": "space t",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "vim.mode=='Normal' && terminal.active"
+        "when": "(editorTextFocus || !inputBoxFocus ) && (vim.mode=='Normal' && terminal.active) "
     },
     {
         "key": "s h",
@@ -115,6 +125,11 @@
     {
         "key": "space space",
         "command": "workbench.action.quickOpen",
+        "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
+    },
+    {
+        "key": "space o",
+        "command": "workbench.action.showAllEditorsByMostRecentlyUsed",
         "when": "vim.mode == 'Normal' && (editorTextFocus || !inputFocus)"
     },
     {
