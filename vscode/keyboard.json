@@ -69,7 +69,7 @@
     {
         "key": "space t",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "(editorTextFocus || !inputBoxFocus ) && (vim.mode=='Normal' && terminal.active) "
+        "when": "(editorTextFocus || !inputFocus ) && (vim.mode=='Normal' && terminal.active) "
     },
     {
         "key": "s h",
@@ -207,11 +207,6 @@
     {
         "key": "a",
         "command": "explorer.newFile",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-    },
-    {
-        "key": "shift-a",
-        "command": "explorer.newFolder",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     {
