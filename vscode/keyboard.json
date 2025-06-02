@@ -28,12 +28,12 @@
         "command": "workbench.action.navigateDown",
     },
     {
-        "key" : "ctrl+down",
+        "key": "ctrl+down",
         "command": "scrollPageDown",
         "when": "(inputFocus || editorFocus) && vim.mode == 'Normal'"
     },
     {
-        "key" : "ctrl+up",
+        "key": "ctrl+up",
         "command": "scrollPageUp",
         "when": "inputFocus || editorFocus"
     },
@@ -67,9 +67,9 @@
         "when": "vim.mode=='Normal' && (sideBarFocus && !inputFocus)"
     },
     {
-        "key": "space t",
+        "key": "ctrl-t",
         "command": "workbench.action.terminal.toggleTerminal",
-        "when": "(editorTextFocus || !inputFocus ) && (vim.mode=='Normal' && terminal.active) "
+        "when": "((vim.mode == 'Normal') && (editorTextFocus || !inputFocus)) || terminal.active"
     },
     {
         "key": "s h",
@@ -100,12 +100,12 @@
     {
         "key": "shift-k",
         "command": "editor.action.moveLinesUpAction",
-        "when": "vim.mode == 'VisualLine' && editorTextFocus"
+        "when": "(vim.mode == 'VisualLine' || vim.mode == 'VisualBlock') && editorTextFocus"
     },
     {
         "key": "shift-j",
         "command": "editor.action.moveLinesDownAction",
-        "when": "vim.mode == 'VisualLine' && editorTextFocus"
+        "when": "(vim.mode == 'VisualLine' || vim.mode == 'VisualBlock') && editorTextFocus"
     },
     {
         "key": "shift-k",
@@ -120,6 +120,11 @@
     {
         "key": "space c s",
         "command": "workbench.action.gotoSymbol",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "space c e",
+        "command": "workbench.action.showErrorsWarnings",
         "when": "vim.mode == 'Normal' && editorTextFocus"
     },
     {
@@ -178,6 +183,11 @@
         "command": "editor.action.formatDocument",
         "when": "(vim.mode == 'Normal' || vim.mode == 'Visual') && (editorTextFocus)"
     },
+    {
+        "key": "space c e",
+        "command": "editor.action.marker.next",
+        "when": "(vim.mode == 'Normal') && (editorTextFocus)"
+    },
     // File Explorer ============================================
     {
         "key": "r",
@@ -207,6 +217,11 @@
     {
         "key": "a",
         "command": "explorer.newFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "shift-a",
+        "command": "explorer.newFolder",
         "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     {
